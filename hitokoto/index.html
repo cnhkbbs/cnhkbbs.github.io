@@ -1,4 +1,4 @@
-<?php
+<!DOCTYPE html>
 $path = dirname(__FILE__);
 $file = file($path."/hitokoto.txt");
 $arr  = mt_rand( 0, count( $file ) - 1 );
@@ -17,3 +17,4 @@ if ($_GET['format'] === 'js') {
 } else {
     echo $content;
 }
+<html>
