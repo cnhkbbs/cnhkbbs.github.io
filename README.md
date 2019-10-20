@@ -1,2 +1,2 @@
-# cnhkbbs.github.io
+# 网站即将建设完成敬请期待
 by cnhk
