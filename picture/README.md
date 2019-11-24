@@ -1,8 +1,0 @@
-# 集体照
-内个集体照他忘记改测光权重了，可能有点黑
-只要用美图之类的软件美化一下下还是ok的啦
-***
-[下载超清原图](https://www.lanzous.com/b005ghwmd)
-***
-copyright by chen
-![证书](https://static.myssl.com/res/images/myssl-id3.png)
