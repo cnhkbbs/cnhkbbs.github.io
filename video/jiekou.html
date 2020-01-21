@@ -1,0 +1,89 @@
+﻿<html>
+<head>
+  <SCRIPT LANGUAGE="JavaScript">
+        <!--
+        function onload(){
+//                var obj=document.getElementById('jk');
+        }
+        function fnChange(){
+        }
+        function onClear(){
+                document.getElementById("vipurl").value="";
+        }
+        function onPlay(){
+                var oJK = document.getElementById("jk");
+                var sJK=oJK.options[oJK.selectedIndex].value;
+                var sVipUrl = document.getElementById("vipurl").value;
+                var oWin = document.getElementById("play");
+                if (sVipUrl.length>0){
+                        oWin.src=sJK + sVipUrl;
+                }
+        }
+//        function iFrameHeight() { 
+//                var ifm = document.getElementById("play"); 
+//                var subWeb = document.frames ? document.frames["play"].document : ifm.contentDocument;
+//                ifm.height = subWeb.body.scrollHeight;
+//                ifm.width = subWeb.body.scrollWidth;
+//        }
+        //-->
+  </SCRIPT>
+  <title>免费VIP播放器</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    table,tr,td,iframe{padding: 0px; margin: 0px;}
+    .bg{
+        background: url(..img/22.png);
+    }
+  </style>
+</head>
+
+<body onload="onload()" style="background-color: black;">
+<table  width="100%" align="center" height="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="9">
+<form method="post" action="">
+<div class="container">
+    <div class="row">
+        <!-- 选择接口 -->
+        <div class="col-md-2 col-sm-2 col-xs-12">
+            <select name="jk" id="jk" size=1 onchange="fnChange()" class="form-control">
+                <option value="http://vip.jlsprh.com/9.php?url=" selected="">【乐视Le】</option>
+                <option value="http://vip.jlsprh.com/index.php?url=" selected="">【芒果TV】</option>
+                <option value="http://vip.jlsprh.com/7.php?url=" selected="">【优酷】</option>
+                <option value="http://vip.jlsprh.com/6.php?url=" selected="">【爱奇艺】</option>
+                <option value="http://vip.jlsprh.com/5.php?url=" selected="">【腾讯】</option>
+                <option value="http://vip.jlsprh.com/4.php?url=" selected="">【土豆】</option>
+                <option value="http://vip.jlsprh.com/3.php?url=" selected="">【搜狐】</option>
+                <option value="http://vip.jlsprh.com/2.php?url=" selected="">【PPTV】</option>
+                <option value="http://vip.jlsprh.com/index.php?url=" selected="">【稳定通用】</option>
+	   <option value="http://api.662820.com/xnflv/index.php?url=" selected="">【高速稳定】</option> 
+	
+            </select>
+        </div>
+        <!-- 选择接口结束 -->
+        <!-- 视频地址 -->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <input type="text" name="vipurl" id="vipurl" size=88 value="https://v.qq.com/x/cover/ldl8jqkvepk3t6a.html"  class="form-control">
+        </div>
+        <!-- 视频地址结束 -->
+        <div class="col-md-2 col-sm-2 col-xs-6">
+            <input type="button" value="播放"  onclick="onPlay()" class="btn btn-success" style="width: 100%;">
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-6">
+            <input type="button" value="清除" onclick="onClear()"  class="btn btn-danger" style="width: 100%;">
+        </div>
+    </div>
+</div>
+</form>
+</td>
+</tr>
+    <tr>
+        <td>
+                <iframe  class="bg" src="" name="play" id="play" width="100%" align="center" height="100%" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" style="background:url('img/1.jpg') no-repeat center;">
+
+                </iframe>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
